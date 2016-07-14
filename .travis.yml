@@ -10,6 +10,7 @@ node_js:
 
 before_install:
   - touch ~/test.txt
+  - echo adddasdasf > ~/test.txt
   - export TEST_VAR=$(~)/test.txt
   - echo TEST $TEST_VAR
 
