@@ -9,8 +9,8 @@ node_js:
   - "6"
 
 before_install:
-  - touch test.txt
-  - export TEST_VAR=$(pwd)/test.txt
+  - touch ~/test.txt
+  - export TEST_VAR=$(~)/test.txt
   - echo TEST $TEST_VAR
 
 script:
