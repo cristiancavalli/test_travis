@@ -1,13 +1,12 @@
 sudo: false
 
 language: node_js
+
 node_js:
   - "0.12"
-
-before_install:
-  - touch test.txt
-  - export TEST_VAR=$(pwd)/test.txt
-  - echo TEST $TEST_VAR
-
+  - "4"
+  - "5"
+  - "6"
+  
 script:
-  - echo end && exit 1
+  - npm run-script coveralls
