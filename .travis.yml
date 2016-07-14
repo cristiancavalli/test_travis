@@ -1,14 +1,13 @@
 sudo: false
 
-language: ruby
-rvm:
- - 2.2
- - jruby
- - rbx-2
+language: node_js
+node_js:
+  - "0.12"
 
 before_install:
   - touch test.txt
   - export TEST_VAR=$(pwd)/test.txt
   - echo TEST $TEST_VAR
 
-script: bundle exec rspec spec
+script:
+  - echo end && exit 1
