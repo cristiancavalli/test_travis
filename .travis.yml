@@ -1,0 +1,8 @@
+sudo: false
+
+language: node_js
+
+before_install:
+  - touch test.txt
+  - export TEST_VAR=$(pwd)/test.txt
+  - echo TEST $TEST_VAR
