@@ -13,7 +13,7 @@ before_install:
   - echo adddasdasf > ~/test.txt
   - export TEST_VAR=~/test.txt
   - echo TEST $TEST_VAR
-  - echo TEST_ENV $TEST_THIS
+  - echo TEST_ENV $TEST_THIS_NOW
   - cat $TEST_VAR
 
 script:
